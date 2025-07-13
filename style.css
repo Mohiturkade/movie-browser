@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#displayMovies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+#pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
